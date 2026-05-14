@@ -1,11 +1,10 @@
-import React from 'react';
+
 
 const Link = ({route}) => {
+   
     return (
         <nav>
-
-                <li><a href={route.path}>{route.name}</a></li>
-
+                <li className='ml-10'><a href={route.path}>{route.name}</a></li>
         </nav>
     );
 };
