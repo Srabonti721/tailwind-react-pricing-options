@@ -5,23 +5,28 @@ import DaisyNav from './components/DaisyNav/DaisyNav'
 import Navbar from './components/Navbar'
 import RecapNavbar from './components/Navbar/RecapNavbar'
 import PriceingOption from './components/Options/PriceingOption'
+import ResultCharts from './components/ResultCharts/ResultCharts'
+import BarCharts from './components/ResultCharts/BarCharts'
 
-const pricingPromise = fetch("priceingData.json").then(res =>res.json())
+
+const pricingPromise = fetch("priceingData.json").then(res => res.json())
 function App() {
 
   return (
     <>
 
-<header>
-  <RecapNavbar></RecapNavbar>
-{/* <Navbar></Navbar> */}
-{/* <DaisyNav></DaisyNav> */}
-</header>
-<main>
-<Suspense fallback={<span className="loading loading-dots loading-lg"></span>}>
-  <PriceingOption pricingPromise={pricingPromise}></PriceingOption>
-</Suspense>
-</main>
+      <header>
+        <RecapNavbar></RecapNavbar>
+        {/* <Navbar></Navbar> */}
+        {/* <DaisyNav></DaisyNav> */}
+      </header>
+      <main>
+        <Suspense fallback={<span className="loading loading-dots loading-lg"></span>}>
+          <PriceingOption pricingPromise={pricingPromise}></PriceingOption>
+        </Suspense>
+<BarCharts></BarCharts>
+          <ResultCharts></ResultCharts>
+      </main>
     </>
   )
 }

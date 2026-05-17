@@ -32,6 +32,7 @@
   {
     "id": 3,
     "plan": "Premium Plan",
+    "popular":"true",
     "price": "$99.67/month",
     "duration": "Monthly",
      "description": "Advanced plan for businesses requiring unlimited projects and dedicated support.",
