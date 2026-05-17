@@ -2,7 +2,7 @@
   {
     "id": 1,
     "plan": "Basic Plan",
-    "price": "$19.34 month",
+    "price": "$19.34/month",
     "duration": "Monthly",
      "description": "Perfect for beginners who want to start with essential features and limited storage.",
     "features": [
@@ -17,7 +17,7 @@
   {
     "id": 2,
     "plan": "Standard Plan",
-    "price": "$49.22 month",
+    "price": "$49.22/month",
     "duration": "Monthly",
      "description": "Best choice for growing teams needing more storage and priority support services.",
     "features": [
@@ -32,7 +32,7 @@
   {
     "id": 3,
     "plan": "Premium Plan",
-    "price": "$99.67 month",
+    "price": "$99.67/month",
     "duration": "Monthly",
      "description": "Advanced plan for businesses requiring unlimited projects and dedicated support.",
     "features": [
