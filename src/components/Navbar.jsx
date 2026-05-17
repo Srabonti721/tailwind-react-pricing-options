@@ -36,24 +36,24 @@ const navigation = [
 ]
 
 const Navbar = () => {
-     const [open, setOpen] = useState(false)
-     const links =  navigation.map(route => <li><a key={route.id} href={route.path}>{route.name}</a></li>)
+    const [open, setOpen] = useState(false)
+    const links = navigation.map(route => <li><a key={route.id} href={route.path}>{route.name}</a></li>)
     return (
         <nav className='flex justify-between mx-6 py-5 '>
             {/* dynamic nav */}
             {/* potion 1 */}
-             <span onClick={()=>setOpen(!open)} className='flex gap-3'>
-                {open? <IoClose />:<MdMenu className='md:hidden'/>}
+            <span onClick={() => setOpen(!open)} className='flex gap-3'>
+                {open ? <IoClose /> : <MdMenu className='md:hidden' />}
                 <ul className='md:hidden '>
-{links}
+                    {links}
                 </ul>
-                
+
                 <h3>My Navigation</h3>
-             </span>
-                
+            </span>
+
             <ul className='hidden md:flex justify-center gap-6'>
                 {
-                   links
+                    links
                 }
             </ul>
             <button className='btn'> login</button>

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "plan": "Basic Plan",
+    "price": "$19.34 month",
+    "duration": "Monthly",
+     "description": "Perfect for beginners who want to start with essential features and limited storage.",
+    "features": [
+      "5 Projects",
+      "10GB Storage",
+      "Basic Support",
+            "Unlimited Projects",
+      "200GB Storage",
+      "24/7 Dedicated Support"
+    ]
+  },
+  {
+    "id": 2,
+    "plan": "Standard Plan",
+    "price": "$49.22 month",
+    "duration": "Monthly",
+     "description": "Best choice for growing teams needing more storage and priority support services.",
+    "features": [
+      "20 Projects",
+      "50GB Storage",
+      "Priority Support",
+            "Unlimited Projects",
+      "200GB Storage",
+      "24/7 Dedicated Support"
+    ]
+  },
+  {
+    "id": 3,
+    "plan": "Premium Plan",
+    "price": "$99.67 month",
+    "duration": "Monthly",
+     "description": "Advanced plan for businesses requiring unlimited projects and dedicated support.",
+    "features": [
+      "Unlimited Projects",
+      "200GB Storage",
+      "24/7 Dedicated Support",
+         "20 Projects",
+      "50GB Storage",
+      "Priority Support"
+    ]
+  }
+]
