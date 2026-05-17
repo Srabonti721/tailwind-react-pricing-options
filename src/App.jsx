@@ -7,9 +7,14 @@ import RecapNavbar from './components/Navbar/RecapNavbar'
 import PriceingOption from './components/Options/PriceingOption'
 import ResultCharts from './components/ResultCharts/ResultCharts'
 import BarCharts from './components/ResultCharts/BarCharts'
+import PaiCharts from './components/ResultCharts/PieCharts'
+import AxiosData from './components/axiosData/AxiosData'
+import axios, { Axios } from 'axios'
 
 
 const pricingPromise = fetch("priceingData.json").then(res => res.json())
+
+const markPromise = axios.get('markData.json')
 function App() {
 
   return (
@@ -24,8 +29,12 @@ function App() {
         <Suspense fallback={<span className="loading loading-dots loading-lg"></span>}>
           <PriceingOption pricingPromise={pricingPromise}></PriceingOption>
         </Suspense>
-<BarCharts></BarCharts>
-          <ResultCharts></ResultCharts>
+        <Suspense fallback={<span className="loading loading-dots loading-lg"></span>}>
+<AxiosData markPromise={markPromise}></AxiosData>
+        </Suspense>
+        <PaiCharts></PaiCharts>
+        <BarCharts></BarCharts>
+        <ResultCharts></ResultCharts>
       </main>
     </>
   )

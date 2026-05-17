@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bar, BarChart, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, Tooltip, XAxis, YAxis } from 'recharts';
 const barCharts = [
   {
     "subject": "Bangla",
@@ -33,10 +33,11 @@ const BarCharts = () => {
             <BarChart width={500} height={300} data={barCharts}>
                 <XAxis dataKey={'subject'}></XAxis>
                 <YAxis></YAxis>
-             <Bar dataKey={'marks'} fill='yellow'></Bar>
+             <Bar dataKey={'marks'} fill='skyBlue' name={'subject'}></Bar>
              <Bar dataKey={'math'} fill='red'></Bar>
-            </BarChart>
-        </div>
+             <Tooltip></Tooltip>
+            </BarChart> 
+            </div>
     );
 };
 
